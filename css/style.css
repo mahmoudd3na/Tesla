@@ -167,6 +167,134 @@ nav ul li:hover a:hover {
     text-decoration: underline;
   }
 
+    .main{
+        display: flex;
+        justify-content: center;
+    
+    }
+    .main img{
+        width: 900px; 
+        height:549px; 
+        z-index: 1;
+        
+    }
+    .animation { 
+        display: flex;
+
+    }
+    .firstline{ 
+        align-self: flex-end;
+        z-index: 1;
+        width:3px; 
+        height:3px; 
+        background-color: black;
+        position: relative;
+        bottom:385px; 
+        right:455px;
+        animation: line1-animation 1.5s forwards;
+        border-radius: 15px;
+    }
+    .secondline{
+        align-self: flex-end;
+        z-index: 1;
+        width:3px; 
+        height:3px; 
+        background-color: black;
+        position: relative;
+        bottom:265px; 
+        right:635px;
+        animation: line2-animation 1.5s forwards;
+        border-radius: 15px;
+    }
+    .Thirdline{
+        
+        z-index: 1;
+        width:3px; 
+        height:3px; 
+        background-color: black;
+        position: relative;
+        top:330px; 
+        right:430px;
+        animation: line3-animation 1.5s forwards;
+        border-radius: 15px;
+    }
+
+    
+    @keyframes line1-animation{
+        to {
+            height:90px;
+           
+        }
+    }
+    @keyframes line2-animation{
+        to {
+            height:150px;
+           
+        }
+    }
+    @keyframes line3-animation{
+        to {
+            height:100px;
+           
+        }
+    }
+    .textshow1{ 
+      z-index: 1;
+      position: relative;
+      font-family: "Roboto";
+      animation-name: showtext1;
+      animation-duration: 2s;
+      top:65px; 
+      right:455px;
+  
+    }
+    @keyframes showtext1 {
+      from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    .textshow2{
+      z-index: 1;
+      position: relative;
+      font-family: "Roboto";
+      animation-name: showtext2;
+      animation-duration: 2s;
+      top:120px; 
+      right:730px;
+  
+    }
+    @keyframes showtext2 {
+      from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    .textshow3{ 
+      z-index: 1;
+      position: relative;
+      font-family: "Roboto";
+      animation-name: showtext3;
+      animation-duration: 2s;
+      top:415px; 
+      right:640px;
+  
+    }
+    @keyframes showtext3 {
+      from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+
 
 
    
+    

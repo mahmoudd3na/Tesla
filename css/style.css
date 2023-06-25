@@ -1,300 +1,318 @@
 @font-face {
-    font-family:"Gotham SSm Book"; 
-    src: url('../fonts/GothamSSm-Book/GothamSSm-Book.otf') format('otf'); 
-  }
-* { 
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Font/GothamMedium.ttf");
 }
-a{
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gotham", "roboto";
+  color: #ffffff;
 }
-p{
-    margin: 0.75rem 0 ;
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/Model3.jpeg");
+  background-position: center;
+  background-size: cover;
 }
-.header{ 
-width:100%; 
-height:100vh;
-position: relative;
- background-image: url("../img/Model3.jpeg"); 
- background-position: center;
- background-size: cover;
-    
+/* 278*56 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
-.navbar { 
-    display:flex; 
-    background-color: transparent;
-    top:0; 
-    justify-content: space-between;
-    
+.logo {
+  margin-top: 20px;
 }
-.logo{
-    margin-top: -30px;
-    margin-left: 38px;
-   
-}
-.logo img{
-    width: 140px;
-    height: 120px;
+.logo a {
+  padding: 5px 50px;
 }
 
-.navbar ul { 
-    display:flex; 
-    align-items: center;
-    list-style-type: none;
-    margin-top: -40px;
-    
+.logo img {
+  width: 120px;
+  height: 12px;
+}
+.main_menu {
+  margin-top: 20px;
+}
+.main_menu ul {
+  display: flex;
+  list-style-type: none;
+}
+.main_menu ul a {
+  padding: 5px 15px;
+  color: #f2f2f2;
+  font-size: 15px;
+  cursor: pointer;
+}
+.main_menu ul a:hover { 
+  background-color:rgba(0, 0, 0, 0.077) ;
+  border-radius: 5px;
+}
+.side_menu {
+  margin-top: 20px;
+}
+.side_menu ul {
+  display: flex;
+  list-style-type: none;
+}
+.side_menu ul a {
+  padding: 5px 15px;
+  color: #f2f2f2;
+  font-size: 15px;
+  cursor: pointer;
+}
+.side_menu ul a:hover{
+  background-color:rgba(0, 0, 0, 0.077) ;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_header {
+  margin-top: 70px;
+}
+.main_header h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+.demo_drive {
+  position: absolute;
+  font-size: 16px;
+  text-decoration: underline;
+  margin-left: 30px;
+  top: 160px;
+}
+
+.info {
+  position: absolute;
+  top: 440px;
+  line-height: 20px;
+}
+.stats {
+  line-height: 1px;
+}
+.stats1 {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 24px;
+}
+.stats1 img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  bottom: 10px;
+}
+.speed {
+  display: flex;
+}
+.stats1 #middle {
+  margin-left: 20px;
+}
+
+.stats2 {
+  display: flex;
+  margin-right: 50px;
+  margin-left: 50px;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.stats2 #miles {
+  margin-left: 15px;
+}
+.btns {
+  border: 3px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  width: 235px;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#mainbtn {
+  color: black;
+  margin-left: 35px;
+}
+#custombtn {
+  background-color: transparent;
+  margin-left: 30px;
+}
+#custombtn:hover {
+  background-color: white;
+  color: black;
+}
+.button {
+  margin-top: 20px;
+}
+.details {
+  display: flex;
+  margin-top: 20px;
+}
+#details1,
+#details2 {
+  font-size: 14px;
+}
+#details2 {
+  text-decoration: underline;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-left: 140px;
+  font-size: 14px;
+}
+.main img {
+  width: 900px;
+  height: 549px;
+  z-index: 1;
+}
+.animation {
+  display: flex;
+}
+.firstline {
+  align-self: flex-end;
+  z-index: 1;
+  width: 3px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+  bottom: 385px;
+  right: 455px;
+  animation: line1-animation 1.5s forwards;
+  border-radius: 15px;
+}
+.secondline {
+  align-self: flex-end;
+  z-index: 1;
+  width: 3px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+  bottom: 265px;
+  right: 635px;
+  animation: line2-animation 1.5s forwards;
+  border-radius: 15px;
+}
+.Thirdline {
+  z-index: 1;
+  width: 3px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+  top: 330px;
+  right: 430px;
+  animation: line3-animation 1.5s forwards;
+  border-radius: 15px;
+}
+
+@keyframes line1-animation {
+  to {
+    height: 90px;
+  }
+}
+@keyframes line2-animation {
+  to {
+    height: 150px;
+  }
+}
+@keyframes line3-animation {
+  to {
+    height: 100px;
+  }
+}
+.textshow1 {
+  color: rgb(96, 92, 92);
+  z-index: 1;
+  position: absolute;
+  animation-name: showtext1;
+  animation-duration: 2s;
+  top: 65px;
+  right: 340px;
+}
+@keyframes showtext1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.textshow2 {
+  color: rgb(96, 92, 92);
+  z-index: 1;
+  position: absolute;
+  animation-name: showtext2;
+  animation-duration: 2s;
+  top: 120px;
+  right: 495px;
+}
+@keyframes showtext2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.textshow3 {
+  color: rgb(96, 92, 92);
+  z-index: 1;
+  /* padding-bottom: auto; */
+  position: absolute;
+  animation-name: showtext3;
+  animation-duration: 2s;
+  top: 430px;
+  right: 260px;
+}
+@keyframes showtext3 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.dot1 {
+  height: 10px;
+  width: 10px;
+  background-color: #f2f2f2 ;
+  border-radius: 50%;
+  border:2px black solid; 
+  position: absolute;
+  z-index: 1;
+  top:155px;
+  right: 457px;
+}
+.dot2 {
+  height: 10px;
+  width: 10px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  border:2px black solid; 
+  position: absolute;
+  z-index: 1;
+  top: 280px;
+  right: 635px;
 }
 
 
-.navbar ul li a{
-    font-family: "Gotham SSm Book" ,"roboto";
-    color:#f2f2f2;
-    padding:1rem; 
-    font-weight: bolder;
-    line-height:20px;
-    transition: filter 0.3s ease;
-
-}
-.navbar ul li a:hover {
-    filter: blur(3px);; 
-    cursor: pointer;  
-}
-nav ul li:hover a:hover {
-    filter: none;
-  }
-
-  .content{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #ffffff;
-    font-family:Arial, Helvetica, sans-serif;
-  }
-  
-.model3{ 
-    position: absolute;
-    font-size: 40px;
-    top:105px;
-
-  }
-  .demo_drive{ 
-    font-size: 16px;
-    position:absolute; 
-    top: 145px; 
-    color:#ffffff;
-    text-decoration: underline;
-  }
-  .demo_drive:hover{
-    text-decoration: underline;
-  }
-
-  .info{
-    position: absolute;
-    top :420px ; 
-    line-height: 20px;
-  }
-  .stats{
-    line-height: 1px;
-  }
-  .stats1{
-    display:flex;
-    justify-content: space-between;
-    margin-right: 50px;
-    margin-left: 50px;
-    font-size: 24px;
-}
-.stats1 img{
-    width: 25px;
-    height: 25px;
-}
-.speed{
-    display: flex;
-  
-}
-.stats1 #middle{
-    margin-left: 20px;
+.dot3 {
+  height: 10px;
+  width: 10px;
+  background-color: #f2f2f2 ;
+  border:2px black solid; 
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 330px;
+  right: 427px;
 }
 
-
-
-
-.stats2{
-    display: flex;
-    margin-right: 50px;
-    margin-left: 50px;
-    justify-content: space-between;
-    font-size: 12px;
-  }
-  .stats2 #miles{
-    margin-left:15px;
-  }
-  .btns{ 
-    border: 3px solid white;
-    border-radius: 5px;
-    font-size: 16px;
-    width:235px; 
-    height:40px;
-    cursor: pointer;
-}
-#mainbtn
-{
-    margin-right: 20px;
-
-  }
-  #custombtn{
-    background-color:transparent ;
-    color: #ffffff;
-    margin-right: 20px;
-  }
-  #custombtn:hover{
-    background-color: white;
-    color: black;
-  }
-  .button{
-    margin-top: 20px;
-  }
-  .details{
-    display: flex;
-    margin-top: 20px;
-  }
-  #details1, #details2{
-    font-size: 14px;
-  }
-  #details2{
-    text-decoration: underline;
-  }
-
-    .main{
-        display: flex;
-        justify-content: center;
-    
-    }
-    .main img{
-        width: 900px; 
-        height:549px; 
-        z-index: 1;
-        
-    }
-    .animation { 
-        display: flex;
-
-    }
-    .firstline{ 
-        align-self: flex-end;
-        z-index: 1;
-        width:3px; 
-        height:3px; 
-        background-color: black;
-        position: relative;
-        bottom:385px; 
-        right:455px;
-        animation: line1-animation 1.5s forwards;
-        border-radius: 15px;
-    }
-    .secondline{
-        align-self: flex-end;
-        z-index: 1;
-        width:3px; 
-        height:3px; 
-        background-color: black;
-        position: relative;
-        bottom:265px; 
-        right:635px;
-        animation: line2-animation 1.5s forwards;
-        border-radius: 15px;
-    }
-    .Thirdline{
-        
-        z-index: 1;
-        width:3px; 
-        height:3px; 
-        background-color: black;
-        position: relative;
-        top:330px; 
-        right:430px;
-        animation: line3-animation 1.5s forwards;
-        border-radius: 15px;
-    }
-
-    
-    @keyframes line1-animation{
-        to {
-            height:90px;
-           
-        }
-    }
-    @keyframes line2-animation{
-        to {
-            height:150px;
-           
-        }
-    }
-    @keyframes line3-animation{
-        to {
-            height:100px;
-           
-        }
-    }
-    .textshow1{ 
-      z-index: 1;
-      position: relative;
-      font-family: "Roboto";
-      animation-name: showtext1;
-      animation-duration: 2s;
-      top:65px; 
-      right:455px;
-  
-    }
-    @keyframes showtext1 {
-      from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    .textshow2{
-      z-index: 1;
-      position: relative;
-      font-family: "Roboto";
-      animation-name: showtext2;
-      animation-duration: 2s;
-      top:120px; 
-      right:730px;
-  
-    }
-    @keyframes showtext2 {
-      from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    .textshow3{ 
-      z-index: 1;
-      position: relative;
-      font-family: "Roboto";
-      animation-name: showtext3;
-      animation-duration: 2s;
-      top:415px; 
-      right:640px;
-  
-    }
-    @keyframes showtext3 {
-      from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-
-
-
-   
-    
